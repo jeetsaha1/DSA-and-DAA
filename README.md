@@ -9,25 +9,25 @@ The aim of this repository is to strengthen **problem-solving skills**, **algori
 
 ## 📁 Repository Structure
 
-DSA-and-DAA/
-│
-├── Data Structure and Algorithm/
-│ ├── Assignment 01/
-│ ├── Assignment 02/
-│ ├── Assignment 03/
-│ ├── Assignment 04/
-│ ├── Assignment 05/
-│ ├── Assignment 06/
-│ ├── Assignment 07/
-│ ├── Assignment 08/
-│ ├── Assignment 09/
-│ └── Assignment 10/
-│
-├── Exam_paper/
-│ ├── prog1.c
-│ └── prog2.c
-│
-└── README.md
+    DSA-and-DAA/
+    │
+    ├── Data Structure and Algorithm/
+    │   ├── Assignment 01/
+    │   ├── Assignment 02/
+    │   ├── Assignment 03/
+    │   ├── Assignment 04/
+    │   ├── Assignment 05/
+    │   ├── Assignment 06/
+    │   ├── Assignment 07/
+    │   ├── Assignment 08/
+    │   ├── Assignment 09/
+    │   └── Assignment 10/
+    │
+    ├── Exam_paper/
+    │   ├── prog1.c
+    │   └── prog2.c
+    │
+    └── README.md
 
 
 Each **assignment folder** contains:
@@ -97,6 +97,6 @@ Jeet Saha
 Data Structures and Algorithms (DSA & DAA)
 
 ---
+```
 
-
-- *"Data structures organize data; algorithms organize thought."*
+- *"Data structures organize data; algorithms organize thought."* 🎯
