@@ -1,3 +1,5 @@
+// 1. Write a Program to perform Quick Sort for the given list of integer values. 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -70,3 +72,32 @@ int main() {
 
     return 0;
 }
+
+
+
+// Algorithm : 
+
+// QUICKSORT(A, low, high)
+//     if low < high then
+//         p ← PARTITION(A, low, high)
+//         QUICKSORT(A, low, p − 1)
+//         QUICKSORT(A, p + 1, high)
+
+// PARTITION(A, low, high)
+//     pivot ← A[high]
+//     i ← low − 1
+//     for j ← low to high − 1 do
+//         if A[j] ≤ pivot then
+//             i ← i + 1
+//             swap A[i] and A[j]
+//     swap A[i + 1] and A[high]
+//     return i + 1
+
+
+// Time complexity Analysis
+
+// T(n) = sum(T(n-i-1) + T(i))/n + O(n)
+
+// After processing;
+
+// T(n) = O(nlog(n))

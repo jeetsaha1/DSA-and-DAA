@@ -48,3 +48,50 @@ int main() {
     print_result(arr, n);       
     return 0;
 }
+
+
+// Algorithm : 
+
+
+// MERGE_SORT(A)
+//     if size(A) ≤ 1 then
+//         return A
+
+//     mid ← size(A) / 2
+//     left ← MERGE_SORT(A[0 … mid−1])
+//     right ← MERGE_SORT(A[mid … end])
+
+//     return MERGE(left, right)
+
+
+// MERGE(left, right)
+//     result ← empty list
+//     i ← 0, j ← 0
+
+//     while i < length(left) and j < length(right) do
+//         if left[i] ≤ right[j] then
+//             add left[i] to result
+//             i ← i + 1
+//         else
+//             add right[j] to result
+//             j ← j + 1
+
+//     append remaining elements of left to result
+//     append remaining elements of right to result
+
+//     return result
+
+
+
+
+
+// Time Complexity Analysis:
+
+// T(n) = 2T(n/2) + O(n)
+//      = (2^k)* T(n/(2^k)) + kn
+
+//      For T(1),  n = 2^k
+//               =>k = log n
+
+//         T(n) = n*T(1) + n*log n
+//              = O(n log n)
