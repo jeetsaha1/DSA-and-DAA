@@ -26,7 +26,22 @@ def LCS(A, B):
             else:
                 dp[i][j] = max(dp[i-1][j], dp[i][j-1])
 
-    return dp[m][n], dp
+        i = m
+        j = n
+        lcs = []
+        while i> 0 and j >0:
+            if A[i-1] == B[j-1]:
+                lcs.append(A[i-1])
+                i-=1
+                j-=1
+            elif dp[i-1][j] > dp[i][j-1]:
+                i -= 1
+            else:
+                j -=1
+
+        lcs.reverse()
+
+    return dp[m][n], "".join(lcs)
 
 A = "ABCBDAB"
 B = "BDCABA"
@@ -34,4 +49,4 @@ B = "BDCABA"
 m = len(A)
 n = len(B)
 
-print("LCS length : ",LCS_string(A,B,m,n))
+print("LCS length : ",LCS(A,B))
